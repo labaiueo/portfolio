@@ -4,22 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>lab.aiueo - Portfolio</title>
-  <meta name="description" content="lab.aiueo - 個人開発者ポートフォリオ。Android向けアプリを開発しています。">
+  <meta name="description" content="lab.aiueo - 個人開発者ポートフォリオ。Androidアプリ・MT4インジケーターを開発しています。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
   <!-- OGP -->
   <meta property="og:title" content="lab.aiueo - Portfolio">
-  <meta property="og:description" content="小さくて楽しいアプリを作っています。Android個人開発者 lab.aiueo のポートフォリオサイト。">
+  <meta property="og:description" content="小さくて楽しいアプリとツールを作っています。Androidアプリ・MT4インジケーター個人開発者 lab.aiueo のポートフォリオサイト。">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://labaiueo.github.io/portfolio/image/JellyDo.PNG">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@labaiueo777">
   <meta name="twitter:title" content="lab.aiueo - Portfolio">
-  <meta name="twitter:description" content="小さくて楽しいアプリを作っています。Android個人開発者 lab.aiueo のポートフォリオサイト。">
+  <meta name="twitter:description" content="小さくて楽しいアプリとツールを作っています。Androidアプリ・MT4インジケーター個人開発者 lab.aiueo のポートフォリオサイト。">
   <meta name="twitter:image" content="https://labaiueo.github.io/portfolio/image/JellyDo.PNG">
   <link rel="icon" href="image/JellyDo.PNG" type="image/png">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTR3CB3PWQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RTR3CB3PWQ');
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -28,6 +36,7 @@
     <div class="nav__links">
       <a href="#about" class="nav__link">About</a>
       <a href="#apps" class="nav__link">Apps</a>
+      <a href="#indicators" class="nav__link">Ind.</a>
       <a href="#links" class="nav__link">Links</a>
       <button class="nav__lang" id="lang-toggle" aria-label="Switch language">EN</button>
     </div>
@@ -52,7 +61,7 @@
 
     <div class="hero__content">
       <h1 class="hero__title">lab.aiueo</h1>
-      <p class="hero__subtitle" data-i18n="hero_subtitle">個人開発者 / Android App Creator</p>
+      <p class="hero__subtitle" data-i18n="hero_subtitle">個人開発者 / Android Apps & MT4 Indicators</p>
     </div>
     <div class="hero__scroll-hint">
       <span class="hero__arrow">&#x2193;</span>
@@ -69,10 +78,12 @@
         </div>
         <div class="about__text">
           <p class="about__catchcopy" data-i18n="about_catchcopy">小さくて楽しいアプリを作っています</p>
-          <p class="about__description" data-i18n="about_desc">Android / Kotlin で個人開発をしています。<br>ニッチな市場で、誰かの「ちょっと便利」や「ちょっと楽しい」を届けるアプリを目指しています。</p>
+          <p class="about__description" data-i18n="about_desc">Android / Kotlin でアプリ開発、MQL4 で MT4 インジケーター開発をしています。<br>ニッチな市場で、誰かの「ちょっと便利」や「ちょっと楽しい」を届けるものを目指しています。</p>
           <div class="about__tech">
             <span class="tech-badge">Android</span>
             <span class="tech-badge">Kotlin</span>
+            <span class="tech-badge">MQL4</span>
+            <span class="tech-badge">MT4</span>
           </div>
         </div>
       </div>
@@ -172,6 +183,114 @@
     </div>
   </section>
 
+  <!-- Indicators -->
+  <section id="indicators" class="section section--indicators">
+    <div class="section__inner">
+      <h2 class="section__heading">Indicators</h2>
+      <p class="indicators__lead" data-i18n="indicators_lead">MT4（MetaTrader 4）向けインジケーターを開発・販売しています。</p>
+      <div class="indicators__grid">
+        <!-- SMC-Radar -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/SMC_Radar.png" alt="SMC-Radar" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">SMC-Radar</h3>
+            <span class="indicator-card__badge indicator-card__badge--new" data-i18n="badge_new">NEW</span>
+            <p class="indicator-card__desc" data-i18n="smc_desc">SMC（スマートマネーコンセプト）の6要素を全自動描画＋アラート通知</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/78349" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CP-POL -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/CP-POL_new.png" alt="CP-POL" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">CP-POL</h3>
+            <span class="indicator-card__badge indicator-card__badge--released" data-i18n="badge_released">リリース済</span>
+            <p class="indicator-card__desc" data-i18n="cppol_desc">通貨強弱ポーラーチャート — 最大30通貨ペアの強弱を一覧表示</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/23647" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+              <a href="https://www.youtube.com/watch?v=I0DKHP7rrTg" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- UD_MTF -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/UD_MTF_new.png" alt="UD_MTF" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">UD_MTF</h3>
+            <span class="indicator-card__badge indicator-card__badge--released" data-i18n="badge_released">リリース済</span>
+            <p class="indicator-card__desc" data-i18n="udmtf_desc">マルチタイムフレーム方向表示 — 全時間足のPips差を一目で確認</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/23783" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+              <a href="https://www.youtube.com/watch?v=GfNjtFxJEZg" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PI-ALT -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/PI-ALT_new.png" alt="PI-ALT" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">PI-ALT</h3>
+            <span class="indicator-card__badge indicator-card__badge--released" data-i18n="badge_released">リリース済</span>
+            <p class="indicator-card__desc" data-i18n="pialt_desc">価格変動アラート — Pips設定越えでAlert/Push/Sound通知</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/24003" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+              <a href="https://www.youtube.com/watch?v=Hh5YUecramQ" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CP_POW -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/CP_POW_new.png" alt="CP_POW" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">CP_POW</h3>
+            <span class="indicator-card__badge indicator-card__badge--released" data-i18n="badge_released">リリース済</span>
+            <p class="indicator-card__desc" data-i18n="cppow_desc">通貨ペア変動率ランキング — 最大30通貨ペアの変化率を表示</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/23861" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+              <a href="https://www.youtube.com/watch?v=cRW152szdYI" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CP_POW_FREE -->
+        <div class="indicator-card" data-status="released">
+          <div class="indicator-card__icon">
+            <img src="image/CP_POW_FREE_new.png" alt="CP_POW_FREE" class="indicator-card__icon-img">
+          </div>
+          <div class="indicator-card__body">
+            <h3 class="indicator-card__name">CP_POW_FREE</h3>
+            <span class="indicator-card__badge indicator-card__badge--free" data-i18n="badge_free">無料</span>
+            <p class="indicator-card__desc" data-i18n="cppowfree_desc">CP-POWの無料版 — 最大5通貨ペア対応</p>
+            <div class="indicator-card__links">
+              <a href="https://www.gogojungle.co.jp/tools/indicators/23870" target="_blank" rel="noopener" class="indicator-card__link indicator-card__link--gogo">GogoJungle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="indicators__platform">
+        <span class="indicators__platform-badge">MT4</span>
+        <span class="indicators__platform-badge">MQL4</span>
+        <span class="indicators__platform-text" data-i18n="indicators_platform">GogoJungleにて販売中</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Links -->
   <section id="links" class="section section--links">
     <div class="section__inner">
@@ -195,6 +314,13 @@
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
           </svg>
           <span class="link-item__label">YouTube</span>
+        </a>
+        <a href="https://www.gogojungle.co.jp/users/186923" target="_blank" rel="noopener" class="link-item">
+          <svg class="link-item__icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+            <rect width="48" height="48" rx="8" fill="#1a1a1a"/>
+            <text x="24" y="33" text-anchor="middle" fill="#E8962E" font-size="22" font-weight="bold">G</text>
+          </svg>
+          <span class="link-item__label">GogoJungle</span>
         </a>
       </div>
     </div>
