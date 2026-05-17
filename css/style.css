@@ -310,6 +310,7 @@ img { max-width: 100%; height: auto; display: block; }
 .app-card__link--youtube { background: #FF0000; color: var(--color-white); }
 .app-card__link--note { background: #41C9B4; color: var(--color-white); }
 .app-card__link--tiktok { background: #000000; color: var(--color-white); }
+.app-card__link--web { background: #4A6FA5; color: var(--color-white); }
 
 /* ============================================
    Indicators Section
