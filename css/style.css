@@ -309,6 +309,7 @@ img { max-width: 100%; height: auto; display: block; }
 .app-card__play-badge { height: 40px; width: auto; }
 .app-card__link--youtube { background: #FF0000; color: var(--color-white); }
 .app-card__link--note { background: #41C9B4; color: var(--color-white); }
+.app-card__link--tiktok { background: #000000; color: var(--color-white); }
 
 /* ============================================
    Indicators Section
